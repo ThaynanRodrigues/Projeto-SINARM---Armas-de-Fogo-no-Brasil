@@ -21,7 +21,6 @@ O dashboard foi construído com foco em **visual limpo, interatividade e suporte
 ## 🖼️ Preview do Dashboard
 
 ### 🔹 Página 1 — Visão Geral
-![Visão Geral]
 
 Indicadores principais do projeto, com mapa interativo por UF, totais, taxas e séries temporais.
 
