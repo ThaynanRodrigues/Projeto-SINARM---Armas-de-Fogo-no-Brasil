@@ -1,230 +1,135 @@
-📊 Dashboard Analítico – Registros, Portes e Ocorrências de Armas no Brasil
+# 📊 Dashboard Analítico — Registros, Portes e Ocorrências de Armas no Brasil
 
-Este projeto consiste na construção de um dashboard analítico em Power BI com foco na análise de registros de armas, portes, requerimentos e ocorrências no Brasil, utilizando dados em arquivos CSV.
+> Projeto de Business Intelligence desenvolvido em Power BI para análise de registros, portes, ocorrências e requerimentos de armas no Brasil, com foco em indicadores estratégicos, análises temporais e geográficas.
 
-O objetivo é fornecer uma visão estratégica, interativa e visualmente profissional, permitindo análises temporais, geográficas e operacionais para apoio à tomada de decisão.
+---
 
-🎯 Objetivo do Projeto
+## 🧭 Visão Geral do Projeto
 
-Desenvolver um painel interativo que permita:
+Este projeto tem como objetivo analisar dados públicos relacionados a armas de fogo no Brasil, explorando:
+- Registros
+- Portes
+- Ocorrências
+- Requerimentos
+- Taxas de aprovação
+- Perfil por UF, sexo, tipo de arma e calibre
 
-Monitorar o volume de registros, portes, ocorrências e requerimentos;
+O dashboard foi construído com foco em **visual limpo, interatividade e suporte à tomada de decisão**.
 
-Analisar a taxa de aprovação de requerimentos;
+---
 
-Identificar padrões por UF, sexo, tipo de arma e tipo de ocorrência;
+## 🖼️ Preview do Dashboard
 
-Visualizar a evolução mensal dos dados;
+### 🔹 Página 1 — Visão Geral
+![Visão Geral](./img/visao-geral.png)
 
-Suportar decisões com base em indicadores claros e comparativos.
+Indicadores principais do projeto, com mapa interativo por UF, totais, taxas e séries temporais.
 
-🧠 Estrutura do Projeto
+---
 
-O dashboard foi estruturado em 3 páginas principais:
+### 🔹 Página 2 — Análises Detalhadas
+![Análises Detalhadas](./img/analises-detalhadas.png)
 
-✅ 1. Visão Geral
+Análises por:
+- Sexo
+- Tipo de arma
+- Calibre
+- Categoria
+- Tipo de requerimento
 
-Visão macro dos dados:
+---
 
-Total de Registros
+### 🔹 Página 3 — Ocorrências
+![Ocorrências](./img/ocorrencias.png)
 
-Total de Portes
+Evolução temporal e distribuição das ocorrências por tipo e canal.
 
-Total de Ocorrências
+---
 
-Taxa de Aprovação de Requerimentos
+## 🎯 Objetivos do Projeto
 
-Evolução mensal dos requerimentos
+- Monitorar o volume de registros, portes, ocorrências e requerimentos  
+- Analisar a taxa de aprovação  
+- Identificar padrões regionais e demográficos  
+- Avaliar o comportamento temporal dos dados  
+- Transformar dados públicos em **informação visual estratégica**
 
-Mapa por UF
+---
 
-Top UFs por ocorrências
+## 🛠️ Tecnologias e Ferramentas
 
-Distribuição por sexo
+- Power BI Desktop  
+- DAX (Data Analysis Expressions)  
+- Excel / CSV  
+- Modelagem Dimensional  
+- Storytelling com Dados  
 
-✅ 2. Análises Detalhadas
+---
 
-Foco em aprofundamento analítico:
+## 🗂️ Fonte dos Dados
 
-Análise por tipo de requerimento
+Dados públicos em formato CSV, contendo informações sobre:
+- Registros
+- Portes
+- Ocorrências
+- Requerimentos
+- Sexo, UF, município, calibre, tipo de arma, decisão
 
-Deferidos x Indeferidos
+---
 
-Categorias de armas
+## 🔄 Processo ETL
 
-Análise por perfil
+**Extração**
+- Importação dos arquivos CSV no Power BI
 
-Comparações entre grupos
+**Transformação**
+- Tratamento de datas  
+- Padronização de campos  
+- Criação de colunas de apoio (Ano, Mês, UF)  
+- Limpeza de dados nulos  
 
-✅ 3. Ocorrências
+**Carga**
+- Criação da tabela calendário  
+- Relacionamentos entre tabelas  
+- Modelagem em esquema estrela  
 
-Foco operacional:
+---
 
-Evolução mensal das ocorrências
+## 📐 Principais Métricas (DAX)
 
-Distribuição por tipo de ocorrência
+- Total de Registros  
+- Total de Portes  
+- Total de Ocorrências  
+- Total de Requerimentos  
+- Taxa de Aprovação  
+- Requerimentos Deferidos  
+- Requerimentos Indeferidos  
+- Percentual por Sexo  
+- Ranking de UFs  
+- Evolução Mensal  
 
-Volume por canal e segmento
+---
 
-🔄 Processo ETL
-1. Extração
+## 🎨 Design e Storytelling
 
-Importação de arquivos CSV diretamente no Power BI.
+- Tema escuro profissional  
+- Layout em blocos de KPI  
+- Cores para destaque de métricas  
+- Navegação por botões entre páginas  
+- Storytelling em fluxo:
+  - Visão Geral → Análises → Ocorrências  
 
-2. Transformação
+---
 
-Tratamento no Power Query:
+## 🚀 Resultado Final
 
-Padronização de datas;
+O projeto entrega uma **visão clara, organizada e interativa** sobre o cenário de armas no Brasil, permitindo análises estratégicas de forma rápida e visual.
 
-Ajuste de tipos de dados (texto, números e datas);
+---
 
-Remoção de valores nulos;
+## 👤 Autor
 
-Criação de colunas auxiliares:
+**Thaynan Rodrigues**  
+Cientista e Analista de Dados | Power BI | Python | SQL  
+[LinkedIn](https://www.linkedin.com/in/thaynanrodrigues/)
 
-Ano
-
-Mês
-
-UF
-
-Tipo de ocorrência
-
-Categoria da arma
-
-Sexo
-
-Status do registro
-
-Decisão do requerimento
-
-Criação de uma Dimensão de Tempo (DimData) para permitir análises temporais corretas.
-
-3. Carga
-
-Relacionamentos modelados entre:
-
-Registros
-
-Portes
-
-Ocorrências
-
-Requerimentos
-
-Dimensão de Tempo
-
-Dimensão Geográfica (UF)
-
-📐 Modelagem de Dados
-
-Modelagem em formato estrela, garantindo:
-
-Melhor desempenho das consultas;
-
-Facilidade na criação de medidas em DAX;
-
-Consistência nos filtros e segmentações.
-
-📏 Principais Métricas Criadas (DAX)
-
-Total de Registros
-
-Total de Portes
-
-Total de Ocorrências
-
-Total de Requerimentos
-
-Requerimentos Deferidos
-
-Requerimentos Indeferidos
-
-Taxa de Aprovação (%)
-
-Percentual Masculino x Feminino
-
-Top UFs por Ocorrências
-
-Evolução Mensal de Requerimentos
-
-Distribuição por Categoria de Arma
-
-Todas as métricas foram desenvolvidas em DAX, respeitando contexto de filtro e relacionamento entre tabelas.
-
-🎨 Design e Storytelling
-
-O layout foi desenvolvido com foco em:
-
-Hierarquia visual dos KPIs
-
-Leitura rápida dos indicadores
-
-Navegação intuitiva
-
-Storytelling com dados
-
-Foram utilizados:
-
-Cartões de KPI
-
-Gráficos de linha
-
-Gráficos de barras
-
-Gráficos segmentados
-
-Mapas geográficos
-
-Tabelas analíticas
-
-🧭 Interatividade
-
-Segmentação por:
-
-Ano
-
-UF
-
-Tipo de ocorrência
-
-Categoria da arma
-
-Sexo
-
-Drill-through entre páginas
-
-Navegação por botões laterais
-
-Filtros dinâmicos por página
-
-🛠️ Ferramentas Utilizadas
-
-Power BI Desktop
-
-DAX (Data Analysis Expressions)
-
-Power Query
-
-Modelagem Dimensional
-
-Arquivos CSV
-
-📂 Organização do Repositório
-📁 dados/        → Arquivos CSV utilizados  
-📁 dashboard/    → Arquivo .pbix  
-📁 imagens/      → Prints do dashboard  
-📄 README.md     → Documentação do projeto  
-
-✅ Status do Projeto
-
-✔️ Concluído
-✔️ Modelado
-✔️ Dashboards Finalizados
-✔️ Documentação Completa
-
-👤 Autor
-
-Thaynan Rodrigues
-Cientista e Analista de Dados | Power BI | Python | SQL
