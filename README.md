@@ -72,6 +72,11 @@ Dados públicos em formato CSV, contendo informações sobre:
 - Requerimentos
 - Sexo, UF, município, calibre, tipo de arma, decisão
 
+Os dados utilizados neste projeto foram obtidos a partir do portal oficial do governo:
+
+🔗 [Base de dados do SINARM – Sistema Nacional de Armas (dados.gov.br)](https://dados.gov.br/dados/conjuntos-dados/sinarm---sistema-nacional-de-armas)
+
+
 ---
 
 ## 🔄 Processo ETL
