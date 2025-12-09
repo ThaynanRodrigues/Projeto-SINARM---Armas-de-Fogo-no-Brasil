@@ -27,7 +27,6 @@ Indicadores principais do projeto, com mapa interativo por UF, totais, taxas e s
 ---
 
 ### 🔹 Página 2 — Análises Detalhadas
-![Análises Detalhadas](./img/analises-detalhadas.png)
 
 Análises por:
 - Sexo
@@ -39,7 +38,6 @@ Análises por:
 ---
 
 ### 🔹 Página 3 — Ocorrências
-![Ocorrências](./img/ocorrencias.png)
 
 Evolução temporal e distribuição das ocorrências por tipo e canal.
 
